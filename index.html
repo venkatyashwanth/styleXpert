@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style Expert</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- fontawesome -->
+    <style>
+        .whatsapplogo {
+            font-weight: 900;
+        }
+    </style>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <img src="./media/logoHeading.png" alt="logo">
+        </div>
+        <div class="formContainer">
+            <form action="./success.html" class="formEl" onsubmit="return validateForm()" novalidate>
+                <h1>
+                    GET YOUR HOME STYLED BY STYLE EXPERTS TO
+                    CREATE STUNNING ROOMS YOU’LL LOVE
+                </h1>
+                <!-- fullname -->
+                <label for="fullName" class="labelElements">Full Name*</label><br>
+                <input type="text" id="fullName" class="inputElements">
+                <!-- email-id -->
+                <label for="email" class="labelElements">Email Id*</label><br>
+                <input type="text" id="email" class="inputElements">
+                <!-- mobile -->
+                <label for="mobile" class="labelElements">Mobile*</label><br>
+                <input type="text" id="mobile" class="inputElements">
+                <!-- city -->
+                <label for="cities" class="labelElements">City*</label><br>
+                <select name="" id="cities" class="inputElement2">
+                    <option value="-">choose</option>
+                    <option value="vijayawada">Vijayawada</option>
+                    <option value="pune">Pune</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="banglore">Banglore</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+                <input type="checkbox" id="getUpdate">
+                <label for="getUpdate" class="checkEl">Yes, I would like to get important updates on <span
+                        class="whatsappbrand"><i class="fa-brands fa-whatsapp whatsapplogo"></i> whatsapp</span></label>
+                <div class="subButton">
+                    <input type="submit" class="btnStyle">
+                </div>
+
+            </form>
+        </div>
+        <div class="procedureContainer">
+            <h1>
+                HOW IT WORKS 
+            </h1>
+            <div class="procedureBlocks">
+                <div class="pbt1 pbText">
+                    <div class="numProcedure">
+                        <span>01</span>
+                    </div>
+                    <h3>TELL US ABOUT YOUR STYLE</h3>
+                    <p>Talk to our designer so that we know more about your style.</p>
+                </div>
+                <div class="pbt1  pbText">
+                    <div class="numProcedure">
+                        <span>02</span>
+                    </div>
+                    <h3>LET'S MEET</h3>
+                    <p>Book an appointment to meet a D’Decor style consultant.</p>
+                </div>
+                <div class="pbText">
+                    <div class="numProcedure">
+                        <span>03</span>
+                    </div>
+                    <h3>CREATE AND COMPLETE</h3>
+                    <p>Watch your dream home come alive.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sliderSection">
+        <div>
+            <h1 class="sliderHeading">
+                DECOR CONCEPTS
+            </h1>
+            <div class="carouselMain">
+                <button class="prevButton" id="previousBtn">‹</button>
+                <div class="carouselCont active" id="carouselbox1">
+                    <div class="box1">
+                        <h3>COASTAL</h3>
+                        <p>
+                            Breathe, be free and live in the colours of sun and sea. Lighter
+                            colours and textured fabrics for a smooth and easy style.
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <img src="./media/slider.png">
+                    </div>
+                </div>
+                <div class="carouselCont" id="carouselbox2">
+                    <div class="box1">
+                        <h3>DESERT</h3>
+                        <p>
+                            Breathe, be free and live in the colours of sun and sea. Lighter
+                            colours and textured fabrics for a smooth and easy style.
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <img src="./media/sliderbl.png">
+                    </div>
+                </div>
+                <button class="nextButton" id="nextBtn">›</button>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="testBody">
+            <h1>TESTIMONIALS</h1>
+            <div class="tesbox1">
+                <div class="tb1Text">
+                    <h3>
+                        We are loving the
+                        mood. It is exactly
+                        what we wanted
+                        for our first house.
+                    </h3><br>
+                    <span>SANDEEP SHAH_|_LIVING ROOM</span>
+                    <p>
+                        CLOSE TO NATURE: Green can create a calm haven in your lounge, add a sense of prosperity in your
+                        home office, lend a nurturing vibe in your kitchen and revitalize you in the bedroom.
+                    </p>
+                </div>
+                <div class="tb2Text">
+                    <img src="./media/testimonial1.png" alt="t2">
+                </div>
+            </div>
+            <div class="tesbox2">
+                <div class="tbs2Text smallScreen">
+                    <h3>
+                        A simple, modern 
+                        look was what I 
+                        wanted for my 
+                        space.
+                    </h3><br>
+                    <span>ESIKIRA KHALIFA_|_LIVING ROOM</span>
+                    
+                    <p>
+                        A HOME AWAY FROM HOME: A simple, modern look was what I wanted for my space : I asked my stylist to help me create a calm and relaxing space which is what I wanted after a long day at work. Keeping that in mind, she curated mood boards especially for me and I absolutely loved it!
+                    </p>
+                </div>
+                <div class="tbs1Text">
+                    <img src="./media/testimonial2.png" alt="t2">
+                </div>
+                <div class="tbs2Text largeScreen">
+                    <h3>
+                        A simple, modern 
+                        look was what I 
+                        wanted for my 
+                        space.
+                    </h3><br>
+                    <span>ESIKIRA KHALIFA_|_LIVING ROOM</span>
+                    <p>
+                        A HOME AWAY FROM HOME: A simple, modern look was what I wanted for my space : I asked my stylist to help me create a calm and relaxing space which is what I wanted after a long day at work. Keeping that in mind, she curated mood boards especially for me and I absolutely loved it!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img src="./media/footerImg.png" alt="footerLogo">
+        </div>
+        <p class="copyright">COPYRIGHT 2019. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+
+</html>

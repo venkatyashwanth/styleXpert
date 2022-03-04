@@ -1,0 +1,479 @@
+@font-face {
+    font-family: barlowSbold;
+    src: url('./googlefonts/Barlow/Barlow-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: barlowReg;
+    src: url('./googlefonts/Barlow/Barlow-Regular.ttf');
+}
+
+@font-face {
+    font-family: barlowExBold;
+    src: url('./googlefonts/Barlow/Barlow-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: barlowMed;
+    src: url('./googlefonts/Barlow/Barlow-Medium.ttf');
+}
+
+@font-face {
+    font-family: barlowBold;
+    src: url('./googlefonts/Barlow/Barlow-Bold.ttf');
+}
+
+@font-face {
+    font-family: barlowLight;
+    src: url("./googlefonts/Barlow/Barlow-Light.ttf");
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    padding: 38px 0px 52px 0px;
+}
+
+
+@media (max-width: 1200px) {
+    .logoContainer img{
+        width: 30%;
+    }
+}
+
+
+.formContainer{
+    height: 110vh;
+    width: 100%;
+    background: url("./media/formBackground.png");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+}
+
+.formContainer form{
+    width: 400px; 
+    height: 420px; 
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 6%;
+    background-color: white;
+}
+
+.formEl{
+    padding: 20px;
+}
+
+.formEl h1{
+    font-family: barlowSbold;
+    font-size: 18px;
+}   
+
+@media (max-width: 700px) {
+    .formContainer form{
+        max-width: 80%; 
+        height: 460px; 
+        margin: auto;
+    }
+    .formEl h1{
+        font-size: 16px;
+    }   
+}
+
+.inputElements{
+    width: 90%;
+    background-color: #F7F5F2;
+    
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+}
+
+.inputElements:hover{
+    border: 1px solid #1e90ff;
+}
+
+.inputElement2{
+    width: 95%;
+    background-color: #F7F5F2;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+}
+
+.inputElement2:hover{
+    border: 1px solid #1e90ff;
+}
+
+.labelElements{
+    display: inline-block;
+    padding-bottom: 5px;
+    font-family: barlowSbold;
+    font-size: 13px;
+}
+
+.checkEl{
+    font-family: barlowReg;
+    font-size: 13px;
+}
+
+.whatsappbrand{
+    font-family: barlowExBold;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.subButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btnStyle{
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: barlowMed;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.procedureContainer{
+    background-color: #F7F5F2;
+    display: flex;
+    flex-direction: column;
+}
+
+.procedureContainer h1{
+    text-align: center;
+    font-family: barlowBold;
+    font-size: 32px;
+}
+
+.procedureBlocks{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.pbt1{
+    border-right: 1px solid #707070;
+}
+
+.pbText{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 160px;
+    width: 30%;
+    padding: 10px;
+}
+
+.pbText div{
+    margin-bottom: 3px;
+}
+.pbText h3{
+    margin-bottom: 3px;
+    font-family: barlowSbold;
+    font-size: 16px;
+}
+.pbText p{
+    margin-bottom: 0px;
+    font-family: barlowMed;
+    font-size: 12px;
+}
+
+@media (max-width: 940px) {
+    .procedureBlocks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pbt1{
+        border-right: none;
+        border-bottom: 1px solid #707070;
+    }
+
+    .pbText{
+        width: 60%;
+    }
+
+    .pbText h3{
+        text-align: center;
+    }
+    .pbText p{
+        text-align: center;
+    }
+    
+}
+
+.numProcedure{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-family: barlowSbold;
+    font-size: 16px;
+}
+
+.sliderSection{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.conceptsContainer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.sliderHeading{
+    margin: 0px;
+    text-align: center;
+    font-family: barlowBold;
+    font-size: 32px;
+}
+
+.carouselMain{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carouselCont.active{
+    display: flex;
+    align-items: center;
+}
+
+.carouselCont{
+    display: none;
+}
+
+.box1{
+    width: 140px;
+    text-align: justify;
+    margin-right: 40px;
+    font-family: barlowReg;
+}
+
+.box2 img{
+    max-width: 100%;
+}
+
+@media (max-width: 920px) {
+    .carouselCont.active{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .carouselCont{
+        display: none;
+    }
+    .box1{
+        width: 180px;
+        margin: auto;
+        font-family: barlowReg;
+        text-align: center;
+    }
+}
+.prevButton{
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.nextButton{
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.showCard{
+    display: none;
+}
+.testimonials{
+    background-color: #F7F5F2;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.testBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testBody h1{
+    font-family: barlowBold;
+    font-size: 32px;
+}
+
+.tesbox1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 75%;
+}
+
+
+.tb1Text{
+    width: 30%;
+    margin-right: 10px;
+}
+
+
+.tbs2Text{
+    width: 30%;
+    margin-left: 10px;
+}
+
+.testText2{
+    width: 20%;
+}
+
+.tb2Img img{
+    max-width: 90%;
+}
+
+.tb1Text h3{
+    font-family: barlowLight;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.tb1Text span{
+    text-decoration: underline;
+    font-family: barlowReg;
+    font-size: 12px
+}
+
+
+.tb1Text p{
+    font-family: barlowReg;
+    font-size: 16px;
+}
+
+.tb2Text img{
+    max-width: 100%;
+}
+
+
+.tesbox2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 75%;
+}
+
+
+
+.tbs2Text h3{
+    font-family: barlowLight;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tbs2Text span{
+    text-decoration: underline;
+    font-family: barlowReg;
+    font-size: 12px
+}
+
+
+.tbs2Text p{
+    font-family: barlowReg;
+    font-size: 16px;
+}
+
+.tbs1Text img{
+    max-width: 100%;
+}
+
+.smallScreen{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .tesbox1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        width: 75%;
+    }
+    .tesbox2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        width: 75%;
+    }
+    .tb1Text{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .tbs2Text{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .smallScreen{
+        display: block;
+    }
+    .largeScreen{
+        display: none;
+    }
+
+    .tb1Text h3{
+        font-size: 24px;
+    }
+
+    .tb1Text p{
+        font-size: 14px;
+    }
+
+    .tbs2Text h3{
+        font-size: 24px;
+    }
+    .tbs2Text p{
+        font-size: 14px;
+    }
+}
+
+/* footer */
+footer{
+    padding: 10px;
+    height: 20vh;
+    background-color: black;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+footer div img{
+    max-width: 100%;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    font-family: barlowMed;
+    font-size: 14px;
+    padding-top: 10px;
+}
